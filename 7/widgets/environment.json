@@ -1,0 +1,1 @@
+[{"values":["ShopKart"],"name":"Application"},{"values":["Local"],"name":"Environment"},{"values":["Chrome"],"name":"Browser"},{"values":["http://localhost:8080/api"],"name":"API"},{"values":["http://localhost:5173"],"name":"UI"},{"values":["22"],"name":"Java"},{"values":["8"],"name":"Gradle"}]
