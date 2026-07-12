@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shopkart.allureReport.ReportingValidationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-07-12T11:35:21.588Z" hostname="5CG22245QF" time="0.258">
+  <properties/>
+  <testcase name="Verify required reporting categories" classname="com.shopkart.allureReport.ReportingValidationTest" time="0.034"/>
+  <testcase name="Verify categories.json exists" classname="com.shopkart.allureReport.ReportingValidationTest" time="0.001"/>
+  <testcase name="Verify category ordering" classname="com.shopkart.allureReport.ReportingValidationTest" time="0.003"/>
+  <testcase name="Verify important regex patterns" classname="com.shopkart.allureReport.ReportingValidationTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

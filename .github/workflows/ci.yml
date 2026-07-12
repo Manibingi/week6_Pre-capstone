@@ -1,0 +1,76 @@
+name: ShopKart Allure Report
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  allure-report:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 22
+          cache: gradle
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Verify Gradle Installation
+        run: gradle -v
+
+      - name: Run Reporting Validation Test
+        working-directory: Shopkart_Project
+        run: |
+          ./gradlew test \
+          --tests "com.shopkart.allureReport.ReportingValidationTest" \
+          --no-daemon
+
+      - name: Copy Allure Environment
+        if: always()
+        run: |
+          mkdir -p Shopkart_Project/build/allure-results
+
+          cp Shopkart_Project/src/test/resources/environment.properties \
+             Shopkart_Project/build/allure-results/environment.properties
+
+          cp Shopkart_Project/src/test/resources/categories.json \
+             Shopkart_Project/build/allure-results/categories.json
+
+      - name: Checkout gh-pages Branch
+        if: always()
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Generate Allure Report
+        if: always()
+        uses: simple-elf/allure-report-action@master
+        with:
+          allure_results: Shopkart_Project/build/allure-results
+          allure_report: allure-report
+          gh_pages: gh-pages
+          allure_history: allure-history
+
+      - name: Publish Report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history

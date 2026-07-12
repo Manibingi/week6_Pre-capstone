@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Product Defect",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*(AssertionFailedError|expected:|but was:).*"
+  },
+  {
+    "name": "UI Locator Failure",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(NoSuchElementException|ElementNotInteractableException|StaleElementReferenceException).*"
+  },
+  {
+    "name": "API Failure",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(HTTP 5..|500 Internal Server Error|502 Bad Gateway|503 Service Unavailable).*"
+  },
+  {
+    "name": "Database Failure",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(SQLException|SQLSyntaxErrorException|CommunicationsException).*"
+  },
+  {
+    "name": "Authentication / Authorization",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*(401|403|Unauthorized|Forbidden).*"
+  },
+  {
+    "name": "Configuration Issue",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(IllegalStateException|IllegalArgumentException|MissingPropertyException).*"
+  },
+  {
+    "name": "Browser / Infrastructure",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(SessionNotCreatedException|WebDriverException|ChromeDriver|Connection refused).*"
+  },
+  {
+    "name": "Flaky Test",
+    "matchedStatuses": ["passed"],
+    "traceRegex": ".*retry.*"
+  },
+  {
+    "name": "Unclassified Failure",
+    "matchedStatuses": ["broken","failed"]
+  }
+]

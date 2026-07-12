@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shopkart.tests.ShopKartApiTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-07-12T11:35:21.881Z" hostname="5CG22245QF" time="6.008">
+  <properties/>
+  <testcase name="another_cust_access_order()" classname="com.shopkart.tests.ShopKartApiTests" time="4.961"/>
+  <testcase name="prod_search_matching_products()" classname="com.shopkart.tests.ShopKartApiTests" time="0.171"/>
+  <testcase name="cancel_only_once()" classname="com.shopkart.tests.ShopKartApiTests" time="0.275"/>
+  <testcase name="cart_total_in_paise()" classname="com.shopkart.tests.ShopKartApiTests" time="0.183"/>
+  <testcase name="out_of_stock_409()" classname="com.shopkart.tests.ShopKartApiTests" time="0.11"/>
+  <testcase name="checkout_place_order()" classname="com.shopkart.tests.ShopKartApiTests" time="0.245"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Alice",
+    "email": "alice@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Bob",
+    "email": "bob@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts/2/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=2
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "sku": "SKU-BAG",
+    "qty": 1
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "address": "Trivandrum, India",
+    "cartId": 2
+}
+Request method:	GET
+Request URI:	http://localhost:8080/api/orders/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIyIiwicGVyc29uYSI6ImJvYiIsImVtYWlsIjoiYm9iQHNob3BrYXJ0LnRlc3QiLCJpYXQiOjE3ODM4NTYxMjYsImV4cCI6MTc4Mzg1OTcyNn0.1pKI1w8DTshKH3I9ciAD8UXLTqMzjMQj19ItALu1lAE
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:8080/api/products?q=bag
+Proxy:			<none>
+Request params:	<none>
+Query params:	q=bag
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Alice",
+    "email": "alice@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts/3/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=3
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "sku": "SKU-BAG",
+    "qty": 1
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "address": "Trivandrum, India",
+    "cartId": 3
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/orders/2/cancel
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=2
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/orders/2/cancel
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=2
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Alice",
+    "email": "alice@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts/4/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=4
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "sku": "SKU-BAG",
+    "qty": 2
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Alice",
+    "email": "alice@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts/5/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=5
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "sku": "SKU-CAP",
+    "qty": 1
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Alice",
+    "email": "alice@shopkart.test"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:8080/api/carts/6/items
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=6
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "sku": "SKU-BAG",
+    "qty": 2
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "address": "Chennai, Tamilnadu",
+    "cartId": 6
+}
+HTTP/1.1 201 Created
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 259
+ETag: W/"103-J9eUqUTZ+sZLwGT+vlr3m67kX6g"
+Date: Sun, 12 Jul 2026 11:35:27 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 3,
+    "orderId": 3,
+    "customerId": 1,
+    "cartId": 6,
+    "status": "PLACED",
+    "totalPaise": 99800,
+    "address": "Chennai, Tamilnadu",
+    "createdAt": "2026-07-12T11:35:27.000Z",
+    "items": [
+        {
+            "sku": "SKU-BAG",
+            "name": "Metro Carryall",
+            "qty": 2,
+            "unitPricePaise": 49900,
+            "lineTotalPaise": 99800
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://localhost:8080/api/orders/3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=3
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
