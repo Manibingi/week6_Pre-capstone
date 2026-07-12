@@ -1,857 +1,0 @@
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Bob",
-!    "email": "bob@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/12/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=12
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-BAG",
-    "qty": 1
-}
-Request method:	POST
-/Request URI:	http://localhost:8080/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-$    "address": "Trivandrum, India",
-    "cartId": 12
-}
-Request method:	GET
-1Request URI:	http://localhost:8080/api/orders/7
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=7
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-æ				Authorization=Bearer eyJzdWIiOiIyIiwicGVyc29uYSI6ImJvYiIsImVtYWlsIjoiYm9iQHNob3BrYXJ0LnRlc3QiLCJpYXQiOjE3ODM4NTg1NjUsImV4cCI6MTc4Mzg2MjE2NX0.kUpNeXSNNvZY_NBqaMLLsxQJ8jkRzV52v-rBT4_G810
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-7Request URI:	http://localhost:8080/api/products?q=bag
-Proxy:			<none>
-Request params:	<none>
-Query params:	q=bag
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-	Request method:	POST
-	3Request URI:	http://localhost:8080/api/auth/login
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	<none>
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:
-	{
-	    "password": "Alice",
-	#    "email": "alice@shopkart.test"
-	}
-	Request method:	POST
-	.Request URI:	http://localhost:8080/api/carts
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	<none>
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:			<none>
-	Request method:	POST
-	7Request URI:	http://localhost:8080/api/carts/13/items
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	id=13
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:
-	{
-	    "sku": "SKU-BAG",
-	    "qty": 1
-	}
-	Request method:	POST
-	/Request URI:	http://localhost:8080/api/orders
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	<none>
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:
-	{
-	$    "address": "Trivandrum, India",
-	    "cartId": 13
-	}
-	Request method:	POST
-	8Request URI:	http://localhost:8080/api/orders/8/cancel
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	id=8
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:			<none>
-	Request method:	POST
-	8Request URI:	http://localhost:8080/api/orders/8/cancel
-	Proxy:			<none>
-	Request params:	<none>
-	Query params:	<none>
-	Form params:	<none>
-	Path params:	id=8
-	WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-	√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-	#				Content-Type=application/json
-	Cookies:		<none>
-	Multiparts:		<none>
-	Body:			<none>
-
-Request method:	POST
-
-3Request URI:	http://localhost:8080/api/auth/login
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-Path params:	<none>
-
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-
-#				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:
-
-{
-
-    "password": "Alice",
-
-#    "email": "alice@shopkart.test"
-
-}
-
-Request method:	POST
-
-.Request URI:	http://localhost:8080/api/carts
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-Path params:	<none>
-
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-
-#				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:			<none>
-
-Request method:	POST
-
-7Request URI:	http://localhost:8080/api/carts/14/items
-
-Proxy:			<none>
-
-Request params:	<none>
-
-Query params:	<none>
-
-Form params:	<none>
-
-Path params:	id=14
-
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
-
-#				Content-Type=application/json
-
-Cookies:		<none>
-
-Multiparts:		<none>
-
-Body:
-
-{
-
-    "sku": "SKU-BAG",
-
-    "qty": 2
-
-}
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/15/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=15
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-CAP",
-    "qty": 1
-}
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/16/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=16
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-BAG",
-    "qty": 2
-}
-Request method:	POST
-/Request URI:	http://localhost:8080/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-%    "address": "Chennai, Tamilnadu",
-    "cartId": 16
-}
-HTTP/1.1 201 Created
- Access-Control-Allow-Origin: *
-/Content-Type: application/json; charset=utf-8
-Content-Length: 260
-+ETag: W/"104-KUro6wAAEzfoHOhU+nKQ4UKn2Ow"
-%Date: Sun, 12 Jul 2026 12:16:07 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
-{
-    "id": 9,
-    "orderId": 9,
-    "customerId": 1,
-    "cartId": 16,
-    "status": "PLACED",
-    "totalPaise": 99800,
-%    "address": "Chennai, Tamilnadu",
--    "createdAt": "2026-07-12T12:16:07.000Z",
-    "items": [
-
-        {
-            "sku": "SKU-BAG",
-&            "name": "Metro Carryall",
-            "qty": 2,
-%            "unitPricePaise": 49900,
-$            "lineTotalPaise": 99800
-
-        }
-    ]
-}
-Request method:	GET
-1Request URI:	http://localhost:8080/api/orders/9
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=9
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-@api @negative
-`Scenario: A placed order can only be cancelled once [90m# features/cancel_order.feature:6[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcwLCJleHAiOjE3ODM4NjIxNzB9.AaVXAE_4mzzbfAemG8KJifS1qYBxFHTkOavIV-dI-1s
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/17/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=17
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcwLCJleHAiOjE3ODM4NjIxNzB9.AaVXAE_4mzzbfAemG8KJifS1qYBxFHTkOavIV-dI-1s
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-BAG",
-    "qty": 1
-}
-Request method:	POST
-/Request URI:	http://localhost:8080/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcwLCJleHAiOjE3ODM4NjIxNzB9.AaVXAE_4mzzbfAemG8KJifS1qYBxFHTkOavIV-dI-1s
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-$    "address": "Trivandrum, India",
-    "cartId": 17
-}
-ß  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m has a PLACED order[0m                  [90m# com.shopkart.stepdefs.OrderSteps.placedOrder(java.lang.String)[0m
-Request method:	POST
-9Request URI:	http://localhost:8080/api/orders/10/cancel
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=10
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcwLCJleHAiOjE3ODM4NjIxNzB9.AaVXAE_4mzzbfAemG8KJifS1qYBxFHTkOavIV-dI-1s
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Å  [32mWhen [0m[32mshe cancels the order[0m                        [90m# com.shopkart.stepdefs.OrderSteps.cancelOrder()[0m
- aJul 12, 2026 5:46:11 PM io.opentelemetry.api.GlobalOpenTelemetry maybeAutoConfigureAndSetGlobal
- ≠INFO: AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
-¨  [32mThen [0m[32mthe order status should be [0m[32m[1m"CANCELLED"[0m       [90m# com.shopkart.stepdefs.OrderSteps.verifyDatabaseStatusAlias(java.lang.String)[0m
-Request method:	POST
-9Request URI:	http://localhost:8080/api/orders/10/cancel
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=10
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcwLCJleHAiOjE3ODM4NjIxNzB9.AaVXAE_4mzzbfAemG8KJifS1qYBxFHTkOavIV-dI-1s
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Å  [32mWhen [0m[32mshe cancels the same order again[0m             [90m# com.shopkart.stepdefs.OrderSteps.cancelAgain()[0m
-ì  [32mThen [0m[32mthe response status should be [0m[32m[1m409[0m            [90m# com.shopkart.stepdefs.CommonSteps.verifyStatus(int)[0m
-
-
-@api @db
-_Scenario: Total equals quantity multiplied by price [90m# features/cart_totals.feature:6[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcyLCJleHAiOjE3ODM4NjIxNzJ9.jxwk7RrUOiNJwMQuWC35cgcZKuGJwGomVzIgnA5PBS8
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-ß  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m has an empty cart[0m                   [90m# com.shopkart.stepdefs.CartSteps.hasEmptyCart(java.lang.String)[0m
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/18/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=18
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTcyLCJleHAiOjE3ODM4NjIxNzJ9.jxwk7RrUOiNJwMQuWC35cgcZKuGJwGomVzIgnA5PBS8
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-BAG",
-    "qty": 2
-}
-¿  [32mWhen [0m[32mshe adds [0m[32m[1m2[0m[32m x [0m[32m[1m"SKU-BAG"[0m[32m to the cart[0m           [90m# com.shopkart.stepdefs.OrderSteps.outOfStock(int,java.lang.String)[0m
-ù  [32mThen [0m[32mthe cart total should be [0m[32m[1m99800[0m[32m paise[0m         [90m# com.shopkart.stepdefs.CartSteps.verifyCartTotal(int)[0m
-ù  [32mAnd [0m[32mthe database stores totalPaise as [0m[32m[1m99800[0m       [90m# com.shopkart.stepdefs.CartSteps.verifyDatabaseTotalPaise(int)[0m
-
-@e2e @smoke
-tScenario: Customer successfully places an order                         [90m# features/checkout_e2e.feature:4[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
- XJul 12, 2026 5:46:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
- 9WARNING: Unable to find CDP implementation matching 150
- RJul 12, 2026 5:46:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
- ˆWARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Ω  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m is logged in[0m                                            [90m# com.shopkart.stepdefs.AuthSteps.userIsLoggedIn(java.lang.String)[0m
-Request method:	GET
-9Request URI:	http://localhost:8080/api/products/SKU-LMP
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	sku=SKU-LMP
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-—  [32mAnd [0m[32mshe adds [0m[32m[1m1[0m[32m x [0m[32m[1m"SKU-LMP"[0m[32m to her cart[0m                                [90m# com.shopkart.stepdefs.CartSteps.addItems(int,java.lang.String)[0m
-ë  [32mWhen [0m[32mshe checks out with a valid address[0m                              [90m# com.shopkart.stepdefs.CartSteps.checkout()[0m
-»  [32mThen [0m[32mthe order confirmation should show [0m[32m[1m"PLACED"[0m                      [90m# com.shopkart.stepdefs.OrderSteps.verifyOrderStatusFromConfirmation(java.lang.String)[0m
-≥  [32mAnd [0m[32mthe order total should be [0m[32m[1m79900[0m[32m paise[0m                             [90m# com.shopkart.stepdefs.OrderSteps.verifyOrderTotal(int)[0m
-Request method:	GET
-2Request URI:	http://localhost:8080/api/orders/11
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=11
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTczLCJleHAiOjE3ODM4NjIxNzN9.dcIDgXMwmVnQCwbNrMrDG9rJYkonxmLHpHXDFGsp9_g
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-ß  [32mAnd [0m[32mthe order should be retrievable through the API[0m                   [90m# com.shopkart.stepdefs.OrderSteps.verifyOrderRetrievableFromApi()[0m
-…  [32mAnd [0m[32mexactly one PLACED order should exist for [0m[32m[1m"alice"[0m[32m in the database[0m [90m# com.shopkart.stepdefs.OrderSteps.verifyPlacedOrdersForUser(java.lang.String)[0m
-
-@api @negative @security
-hScenario: Another customer cannot read someone else's order [90m# features/order_access.feature:4[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NjAwLCJleHAiOjE3ODM4NjIyMDB9.PWjWoP--nYMHkIlwYCpS9LUAzNcfpDKASPftJP0nT64
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/20/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=20
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NjAwLCJleHAiOjE3ODM4NjIyMDB9.PWjWoP--nYMHkIlwYCpS9LUAzNcfpDKASPftJP0nT64
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-BAG",
-    "qty": 1
-}
-Request method:	POST
-/Request URI:	http://localhost:8080/api/orders
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NjAwLCJleHAiOjE3ODM4NjIyMDB9.PWjWoP--nYMHkIlwYCpS9LUAzNcfpDKASPftJP0nT64
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-$    "address": "Trivandrum, India",
-    "cartId": 20
-}
-Ø  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m has a PLACED order[0m                          [90m# com.shopkart.stepdefs.OrderSteps.placedOrder(java.lang.String)[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Bob",
-!    "email": "bob@shopkart.test"
-}
-Request method:	GET
-2Request URI:	http://localhost:8080/api/orders/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=12
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-æ				Authorization=Bearer eyJzdWIiOiIyIiwicGVyc29uYSI6ImJvYiIsImVtYWlsIjoiYm9iQHNob3BrYXJ0LnRlc3QiLCJpYXQiOjE3ODM4NTg2MDAsImV4cCI6MTc4Mzg2MjIwMH0.hEUfGwKf5g57xXaCOrC8GyJzyDdRZrK1EPQxbuu922E
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-π  [32mWhen [0m[32m[0m[32m[1m"bob"[0m[32m requests the order[0m                             [90m# com.shopkart.stepdefs.OrderSteps.anotherUserReadsOrder(java.lang.String)[0m
-õ  [32mThen [0m[32mthe response status should be [0m[32m[1m403[0m                    [90m# com.shopkart.stepdefs.CommonSteps.verifyStatus(int)[0m
-
-@api @negative
-bScenario: Customer cannot add an out-of-stock product [90m# features/out_of_stock.feature:6[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
-Request method:	POST
-.Request URI:	http://localhost:8080/api/carts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NjAwLCJleHAiOjE3ODM4NjIyMDB9.PWjWoP--nYMHkIlwYCpS9LUAzNcfpDKASPftJP0nT64
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-©  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m has an empty cart[0m                     [90m# com.shopkart.stepdefs.CartSteps.hasEmptyCart(java.lang.String)[0m
-Request method:	POST
-7Request URI:	http://localhost:8080/api/carts/21/items
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=21
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-√				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NjAwLCJleHAiOjE3ODM4NjIyMDB9.PWjWoP--nYMHkIlwYCpS9LUAzNcfpDKASPftJP0nT64
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "sku": "SKU-CAP",
-    "qty": 1
-}
-¬  [32mWhen [0m[32mshe adds [0m[32m[1m1[0m[32m x [0m[32m[1m"SKU-CAP"[0m[32m to the cart[0m             [90m# com.shopkart.stepdefs.OrderSteps.outOfStock(int,java.lang.String)[0m
-ï  [32mThen [0m[32mthe response status should be [0m[32m[1m409[0m              [90m# com.shopkart.stepdefs.CommonSteps.verifyStatus(int)[0m
-
-@smoke @ui @api
-_Scenario: Search returns matching products       [90m# features/product_search.feature:7[0m
-Request method:	POST
-3Request URI:	http://localhost:8080/api/auth/login
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "password": "Alice",
-#    "email": "alice@shopkart.test"
-}
- XJul 12, 2026 5:46:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
- 9WARNING: Unable to find CDP implementation matching 150
- RJul 12, 2026 5:46:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
- ˆWARNING: Unable to find version of CDP to use for 150.0.7871.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.33.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-¶  [32mGiven [0m[32m[0m[32m[1m"alice"[0m[32m is logged in[0m                     [90m# com.shopkart.stepdefs.AuthSteps.userIsLoggedIn(java.lang.String)[0m
-ü  [32mWhen [0m[32mshe searches for [0m[32m[1m"Bag"[0m                    [90m# com.shopkart.stepdefs.ProductSteps.searchProduct(java.lang.String)[0m
-®  [32mThen [0m[32mthe product [0m[32m[1m"Metro Carryall"[0m[32m is displayed[0m [90m# com.shopkart.stepdefs.ProductSteps.verifyProduct(java.lang.String)[0m
-Request method:	GET
-7Request URI:	http://localhost:8080/api/products?q=Bag
-Proxy:			<none>
-Request params:	<none>
-Query params:	q=Bag
-Form params:	<none>
-Path params:	<none>
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-¢  [32mAnd [0m[32mthe product API returns product [0m[32m[1m"SKU-BAG"[0m  [90m# com.shopkart.stepdefs.ProductSteps.verifyProductApi(java.lang.String)[0m
-
-@api @negative @security
-sScenario: Accessing a protected endpoint without authentication [90m# features/unauthorized_access.feature:7[0m
-Request method:	GET
-0Request URI:	http://localhost:8080/api/carts/1
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=1
-WHeaders:		Accept=application/json, application/javascript, text/javascript, text/json
-#				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-¢  [32mWhen [0m[32man unauthenticated user requests the cart[0m                [90m# com.shopkart.stepdefs.CommonSteps.unauthenticatedUserRequestsCart()[0m
-ü  [32mThen [0m[32mthe response status should be [0m[32m[1m401[0m                        [90m# com.shopkart.stepdefs.CommonSteps.verifyStatus(int)[0m
- 
- !7 Scenarios ([32m7 passed[0m)
- 28 Steps ([32m28 passed[0m)
- 0m42.302s
- 
- 
