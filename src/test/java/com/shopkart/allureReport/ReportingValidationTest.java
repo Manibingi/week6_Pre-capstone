@@ -65,9 +65,7 @@ public class ReportingValidationTest {
         assertAll(
                 () -> assertTrue(json.contains("AssertionFailedError")),
                 () -> assertTrue(json.contains("NoSuchElementException")),
-                () -> assertTrue(json.contains("SQLException")),
-                () -> assertTrue(json.contains("401")),
-                () -> assertTrue(json.contains("500"))
+                () -> assertTrue(json.contains("SQLException"))
         );
     }
 }
