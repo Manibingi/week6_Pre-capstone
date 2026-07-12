@@ -61,8 +61,11 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.register("reporting") {
+tasks.register<org.gradle.api.tasks.testing.Test>("reporting") {
     group = "verification"
-    description = "Runs the test suite and prepares reporting artifacts."
-    dependsOn(tasks.test)
+    description = "Runs the Allure reporting validation test."
+    useJUnitPlatform()
+    filter {
+        includeTestsMatching("com.shopkart.allureReport.ReportingValidationTest")
+    }
 }
