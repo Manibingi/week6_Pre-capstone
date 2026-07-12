@@ -34,7 +34,6 @@ jobs:
         run: gradle -v
 
       - name: Run Reporting Validation Test
-        working-directory: Shopkart_Project
         run: |
           ./gradlew test \
           --tests "com.shopkart.allureReport.ReportingValidationTest" \
@@ -45,11 +44,11 @@ jobs:
         run: |
           mkdir -p Shopkart_Project/build/allure-results
 
-          cp Shopkart_Project/src/test/resources/environment.properties \
-             Shopkart_Project/build/allure-results/environment.properties
+          cp shopkart-gate6/src/test/resources/environment.properties \
+             shopkart-gate6/build/allure-results/environment.properties
 
-          cp Shopkart_Project/src/test/resources/categories.json \
-             Shopkart_Project/build/allure-results/categories.json
+          cp shopkart-gate6/src/test/resources/categories.json \
+             shopkart-gate6/build/allure-results/categories.json
 
       - name: Checkout gh-pages Branch
         if: always()
@@ -62,7 +61,7 @@ jobs:
         if: always()
         uses: simple-elf/allure-report-action@master
         with:
-          allure_results: Shopkart_Project/build/allure-results
+          allure_results: shopkart-gate6/build/allure-results
           allure_report: allure-report
           gh_pages: gh-pages
           allure_history: allure-history
