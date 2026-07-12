@@ -60,3 +60,9 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.register("reporting") {
+    group = "verification"
+    description = "Runs the test suite and prepares reporting artifacts."
+    dependsOn(tasks.test)
+}

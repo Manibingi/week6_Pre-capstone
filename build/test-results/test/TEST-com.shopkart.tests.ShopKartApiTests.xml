@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.shopkart.tests.ShopKartApiTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-07-12T11:35:21.881Z" hostname="5CG22245QF" time="6.008">
+<testsuite name="com.shopkart.tests.ShopKartApiTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-07-12T12:15:53.816Z" hostname="5CG22245QF" time="13.918">
   <properties/>
-  <testcase name="another_cust_access_order()" classname="com.shopkart.tests.ShopKartApiTests" time="4.961"/>
-  <testcase name="prod_search_matching_products()" classname="com.shopkart.tests.ShopKartApiTests" time="0.171"/>
-  <testcase name="cancel_only_once()" classname="com.shopkart.tests.ShopKartApiTests" time="0.275"/>
-  <testcase name="cart_total_in_paise()" classname="com.shopkart.tests.ShopKartApiTests" time="0.183"/>
-  <testcase name="out_of_stock_409()" classname="com.shopkart.tests.ShopKartApiTests" time="0.11"/>
-  <testcase name="checkout_place_order()" classname="com.shopkart.tests.ShopKartApiTests" time="0.245"/>
+  <testcase name="another_cust_access_order()" classname="com.shopkart.tests.ShopKartApiTests" time="12.085"/>
+  <testcase name="prod_search_matching_products()" classname="com.shopkart.tests.ShopKartApiTests" time="0.359"/>
+  <testcase name="cancel_only_once()" classname="com.shopkart.tests.ShopKartApiTests" time="0.476"/>
+  <testcase name="cart_total_in_paise()" classname="com.shopkart.tests.ShopKartApiTests" time="0.273"/>
+  <testcase name="out_of_stock_409()" classname="com.shopkart.tests.ShopKartApiTests" time="0.227"/>
+  <testcase name="checkout_place_order()" classname="com.shopkart.tests.ShopKartApiTests" time="0.407"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	http://localhost:8080/api/auth/login
 Proxy:			<none>
@@ -47,20 +47,20 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/carts/2/items
+Request URI:	http://localhost:8080/api/carts/12/items
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=2
+Path params:	id=12
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -77,24 +77,24 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI1LCJleHAiOjE3ODM4NTk3MjV9.AgIaoIfqTLi7bq-UxbB3--w8EJs-T9tc47jz9laFCek
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTYzLCJleHAiOjE3ODM4NjIxNjN9.r2QgkG4_jrma2zsM7ri40ZnlsgoRXpg96AE-iYA6z2k
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "address": "Trivandrum, India",
-    "cartId": 2
+    "cartId": 12
 }
 Request method:	GET
-Request URI:	http://localhost:8080/api/orders/1
+Request URI:	http://localhost:8080/api/orders/7
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=1
+Path params:	id=7
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIyIiwicGVyc29uYSI6ImJvYiIsImVtYWlsIjoiYm9iQHNob3BrYXJ0LnRlc3QiLCJpYXQiOjE3ODM4NTYxMjYsImV4cCI6MTc4Mzg1OTcyNn0.1pKI1w8DTshKH3I9ciAD8UXLTqMzjMQj19ItALu1lAE
+				Authorization=Bearer eyJzdWIiOiIyIiwicGVyc29uYSI6ImJvYiIsImVtYWlsIjoiYm9iQHNob3BrYXJ0LnRlc3QiLCJpYXQiOjE3ODM4NTg1NjUsImV4cCI6MTc4Mzg2MjE2NX0.kUpNeXSNNvZY_NBqaMLLsxQJ8jkRzV52v-rBT4_G810
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -135,20 +135,20 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/carts/3/items
+Request URI:	http://localhost:8080/api/carts/13/items
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=3
+Path params:	id=13
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -165,37 +165,37 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "address": "Trivandrum, India",
-    "cartId": 3
+    "cartId": 13
 }
 Request method:	POST
-Request URI:	http://localhost:8080/api/orders/2/cancel
+Request URI:	http://localhost:8080/api/orders/8/cancel
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=2
+Path params:	id=8
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/orders/2/cancel
+Request URI:	http://localhost:8080/api/orders/8/cancel
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=2
+Path params:	id=8
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -224,20 +224,20 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/carts/4/items
+Request URI:	http://localhost:8080/api/carts/14/items
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=4
+Path params:	id=14
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY2LCJleHAiOjE3ODM4NjIxNjZ9.I7ITXh0t2CDy6VsDAzuIzRbQQaGLTZeHMM3QdtJXtA4
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -270,20 +270,20 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/carts/5/items
+Request URI:	http://localhost:8080/api/carts/15/items
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=5
+Path params:	id=15
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -316,20 +316,20 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 Request method:	POST
-Request URI:	http://localhost:8080/api/carts/6/items
+Request URI:	http://localhost:8080/api/carts/16/items
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=6
+Path params:	id=16
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -346,33 +346,33 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "address": "Chennai, Tamilnadu",
-    "cartId": 6
+    "cartId": 16
 }
 HTTP/1.1 201 Created
 Access-Control-Allow-Origin: *
 Content-Type: application/json; charset=utf-8
-Content-Length: 259
-ETag: W/"103-J9eUqUTZ+sZLwGT+vlr3m67kX6g"
-Date: Sun, 12 Jul 2026 11:35:27 GMT
+Content-Length: 260
+ETag: W/"104-KUro6wAAEzfoHOhU+nKQ4UKn2Ow"
+Date: Sun, 12 Jul 2026 12:16:07 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 
 {
-    "id": 3,
-    "orderId": 3,
+    "id": 9,
+    "orderId": 9,
     "customerId": 1,
-    "cartId": 6,
+    "cartId": 16,
     "status": "PLACED",
     "totalPaise": 99800,
     "address": "Chennai, Tamilnadu",
-    "createdAt": "2026-07-12T11:35:27.000Z",
+    "createdAt": "2026-07-12T12:16:07.000Z",
     "items": [
         {
             "sku": "SKU-BAG",
@@ -384,14 +384,14 @@ Keep-Alive: timeout=5
     ]
 }
 Request method:	GET
-Request URI:	http://localhost:8080/api/orders/3
+Request URI:	http://localhost:8080/api/orders/9
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=3
+Path params:	id=9
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU2MTI3LCJleHAiOjE3ODM4NTk3Mjd9.vupf_RFxor2zQCgacHl7BImlNfx76dpSLC8T0LOsTr4
+				Authorization=Bearer eyJzdWIiOiIxIiwicGVyc29uYSI6ImFsaWNlIiwiZW1haWwiOiJhbGljZUBzaG9wa2FydC50ZXN0IiwiaWF0IjoxNzgzODU4NTY3LCJleHAiOjE3ODM4NjIxNjd9.igbTj0o6RJpx9sgM_BdKPWTnavlHSTSJYWuwB_6ORUQ
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
