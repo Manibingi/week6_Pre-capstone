@@ -10,11 +10,9 @@ permissions:
 
 jobs:
   allure-report:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -30,46 +28,42 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Verify Gradle Installation
+      - name: Check Gradle
         run: gradle -v
 
-      - name: Run Reporting Validation Test
-        run: |
-          ./gradlew test \
-          --tests "com.shopkart.allureReport.ReportingValidationTest" \
-          --no-daemon
+      - name: Make Gradle Wrapper Executable
+        run: chmod +x gradlew
+
+      - name: Run Reporting Tests
+        run: ./gradlew reporting --no-daemon --no-configuration-cache
 
       - name: Copy Allure Environment
         if: always()
         run: |
-          mkdir -p shopkart-gate6/build/allure-results
+          mkdir -p build/allure-results
+          cp src/test/resources/environment.properties \
+            build/allure-results/environment.properties
+          cp src/test/resources/categories.json \
+            build/allure-results/categories.json
 
-          cp shopkart-gate6/src/test/resources/environment.properties \
-             shopkart-gate6/build/allure-results/environment.properties
-
-          cp shopkart-gate6/src/test/resources/categories.json \
-             shopkart-gate6/build/allure-results/categories.json
-
-      - name: Checkout gh-pages Branch
+      - name: Prepare gh-pages directory
         if: always()
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
+        run: mkdir -p gh-pages
 
       - name: Generate Allure Report
         if: always()
         uses: simple-elf/allure-report-action@master
         with:
-          allure_results: shopkart-gate6/build/allure-results
+          allure_results: build/allure-results
           allure_report: allure-report
           gh_pages: gh-pages
           allure_history: allure-history
 
-      - name: Publish Report to GitHub Pages
+      - name: Deploy to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
+          force_orphan: true
