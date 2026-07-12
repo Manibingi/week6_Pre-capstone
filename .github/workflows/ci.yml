@@ -42,7 +42,7 @@ jobs:
       - name: Copy Allure Environment
         if: always()
         run: |
-          mkdir -p Shopkart_Project/build/allure-results
+          mkdir -p shopkart-gate6/build/allure-results
 
           cp shopkart-gate6/src/test/resources/environment.properties \
              shopkart-gate6/build/allure-results/environment.properties
